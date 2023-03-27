@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 50px;
+    overflow-x: hidden;
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Bilder nicht markieren und nicht verschieben */
+img {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} 
+
+/* a nicht markieren und nicht verschieben */
+a {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* p nicht markieren */
+p {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+}
+
+/* Text der kopiert werden darf */
+.textcopy {
+    -webkit-user-select: auto; /* Safari */
+    -moz-user-select: auto; /* Firefox */
+    -ms-user-select: auto; /* Internet Explorer/Edge */
+    user-select: auto; /* Standard */
+}
+
+
+
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 60px;
+}
+
+/* Navbar Text und Setting */
+.navbartext {
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    font-size: 18px;
+    position: absolute;
+    margin-top: 35px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #717171;
+    text-decoration: none;
+}
+
+
+/* Titelbild */
+.title-image {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+.title-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/* Lost -> Projekte */
+.lost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.image-lost {
+    max-width: 400px;
+    margin-bottom: 70px;
+  /*margin-right: 10rem;
+    margin-left: 10rem;*/
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.text-lost {
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.titelprojekt {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-user-select: auto; /* Safari */
+    -moz-user-select: auto; /* Firefox */
+    -ms-user-select: auto; /* Internet Explorer/Edge */
+    user-select: auto; /* Standard */
+}
+
+.unterschriftprojekt {
+    font-size: 18px;
+    color: #b7b7b7;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-user-select: auto; /* Safari */
+    -moz-user-select: auto; /* Firefox */
+    -ms-user-select: auto; /* Internet Explorer/Edge */
+    user-select: auto; /* Standard */
+}
+
+.fa.fa-map-marker {
+    padding-right: 5px;
+    color: #b7b7b7;
+}
+
+.fa.fa-map-marker:hover {
+    color: #717171; /* Hier kannst du die Farbe ändern, die beim Hover angezeigt werden soll */
+}
+
+.button-lost {
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #717171;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 150px;
+}
+
+.button:hover {
+    background-color: #424242;
+}
+
+
+
+/* weisser Link */
+.link-white {
+    color: white;
+    text-decoration: none;
+}
+.link-white:hover {
+    color: white;
+    text-decoration: none;
+}
+.link-white:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Mitte der Website */
+.mittleofpoint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Footer */
+.footer {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    min-height: 80px;
+    bottom: 0;
+    width: 100%;
+    background-color: #4f4f4f;
+}
+
+.footertext {
+    padding-top: 30px;
+}
+
+.errorfooter {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    text-align: center;
+    min-height: 80px;
+    bottom: 0;
+    width: 100%;
+    background-color: #4f4f4f;
+}
+
+
+
+
+/* Einzelne Seiten */
+
+
+
+/* Texte für einzelne Projekte */
+.ubertitleprojekt {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-user-select: auto; /* Safari */
+    -moz-user-select: auto; /* Firefox */
+    -ms-user-select: auto; /* Internet Explorer/Edge */
+    user-select: auto; /* Standard */
+}
+
+.uberunterschriftprojekt {
+    font-size: 25px;
+    color: #b7b7b7;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-user-select: auto; /* Safari */
+    -moz-user-select: auto; /* Firefox */
+    -ms-user-select: auto; /* Internet Explorer/Edge */
+    user-select: auto; /* Standard */
+}
+
+.zwischentitleprojekt {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+/* Abschnitt für Bilder */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+
+/* Bild hochformat */
+.himg {
+    max-width: 100%;
+    height: auto;
+    width: 350px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Bild querformat */
+.qimg {
+    max-width: 100%;
+    height: 550px;
+    width: auto;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* Text fürs Besuchdatum */
+.datumtext {
+    font-size: 18px;
+    color: #b7b7b7;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 2060px) {
+    .datumtext {
+        margin-right: 0px;
+        text-align: center;
+    }
+}
+
+
+/* Abschnitt für Google Maps Karten */
+.karten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Style für Google Maps ausschnitte */
+.maps {
+    width: 700px;
+    height: 400px;
+    margin-bottom: 50px;
+    border: 0;
+    allowfullscreen: true;
+    loading: lazy;
+    referrerpolicy: no-referrer-when-downgrade;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Bildvorschau */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.lightbox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+/* normal text */
+.normaltext {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+
+
+.titelmitte {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 0px; 
+}
