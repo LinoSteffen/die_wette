@@ -119,17 +119,15 @@ p {
 
 
 
-
-
-/* Lost -> Projekte */
-.lost {
+/* present -> präsentieren div - Drehorte */
+.present {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 50px;
 }
 
-.image-lost {
+.image-present {
     max-width: 400px;
     margin-bottom: 70px;
   /*margin-right: 10rem;
@@ -141,7 +139,7 @@ p {
     height: auto;
 }
 
-.text-lost {
+.text-present {
     flex-grow: 1;
     display: grid;
     place-items: center;
@@ -149,7 +147,7 @@ p {
     margin-bottom: 0px;
 }
 
-.titelprojekt {
+.titelpresent {
     font-size: 30px;
     text-align: center;
     margin-top: 0px;
@@ -160,7 +158,7 @@ p {
     user-select: auto; /* Standard */
 }
 
-.unterschriftprojekt {
+.untertitelpresent {
     font-size: 18px;
     color: #b7b7b7;
     text-align: center;
@@ -181,7 +179,7 @@ p {
     color: #717171; /* Hier kannst du die Farbe ändern, die beim Hover angezeigt werden soll */
 }
 
-.button-lost {
+.button-present {
     flex-grow: 1;
     text-align: center;
     margin-top: 20px;
@@ -257,44 +255,6 @@ p {
 
 
 
-
-/* Einzelne Seiten */
-
-
-
-/* Texte für einzelne Projekte */
-.ubertitleprojekt {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    -webkit-user-select: auto; /* Safari */
-    -moz-user-select: auto; /* Firefox */
-    -ms-user-select: auto; /* Internet Explorer/Edge */
-    user-select: auto; /* Standard */
-}
-
-.uberunterschriftprojekt {
-    font-size: 25px;
-    color: #b7b7b7;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    -webkit-user-select: auto; /* Safari */
-    -moz-user-select: auto; /* Firefox */
-    -ms-user-select: auto; /* Internet Explorer/Edge */
-    user-select: auto; /* Standard */
-}
-
-.zwischentitleprojekt {
-    font-size: 35px;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-
-
 /* Abschnitt für Bilder */
 .gallery {
     display: flex;
@@ -323,51 +283,6 @@ p {
     padding-bottom: 50px;
     padding-left: 5px;
     padding-right: 5px;
-}
-
-
-/* Text fürs Besuchdatum */
-.datumtext {
-    font-size: 18px;
-    color: #b7b7b7;
-    text-align: right;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 20px;
-}
-
-@media only screen and (min-width: 2060px) {
-    .datumtext {
-        margin-right: 0px;
-        text-align: center;
-    }
-}
-
-
-/* Abschnitt für Google Maps Karten */
-.karten {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-/* Style für Google Maps ausschnitte */
-.maps {
-    width: 700px;
-    height: 400px;
-    margin-bottom: 50px;
-    border: 0;
-    allowfullscreen: true;
-    loading: lazy;
-    referrerpolicy: no-referrer-when-downgrade;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 
@@ -402,7 +317,6 @@ p {
     margin-bottom: 0px;
     margin-right: 0px;
 }
-
 
 
 .titelmitte {
