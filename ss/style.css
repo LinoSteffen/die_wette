@@ -373,7 +373,9 @@ p {
 
 
 .sponsoren {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sponsoren-img {
@@ -381,6 +383,7 @@ p {
     padding: 30px;
     transition: all .3s ease-in-out;
 }
+
 .sponsoren-img:hover {
     transform: scale(1.15);
 }
@@ -400,6 +403,10 @@ p {
 
 
 .dark-mode {
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
+}
+
+.invertlogo {
+    filter: invert(1);
 }

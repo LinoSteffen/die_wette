@@ -1,52 +1,46 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        padding: 25px;
-        background-color: white;
-        color: black;
-        font-size: 25px;
-      }
-	  .dark-mode {
-	background-color: black;
-	color: white;
-	}
-    </style>
-  </head>
-  <body>
-    <h1>GeeksForGeeks</h1>
-  
-    <p>
-      This is a sample GeeksForGeeks Text. 
-      Dark Mode Websites using Html CSS &
-      Javascript
-    </p>
-  
-    <img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20200122115631/GeeksforGeeks210.png"/>
-  
-    <h3 id="DarkModetext">Dark Mode is OFF</h3>
-	<img class="wdbutton" src="img/dark-mode.png" onclick="myFunction()">
-	<img id="Logo" src="img/LS grey.png">
-    <script>
-	function myFunction() {
-	var element = document.body;
-	element.classList.toggle("dark-mode");
-	if (element.classList.contains("dark-mode")) {
-	document.getElementById("Logo").src = "img/LS white.png";
-	document.getElementById("switch").src = "img/moon.png";
-	} else {
-	document.getElementById("Logo").src = "img/LS grey.png";
-	document.getElementById("switch").src = "img/sun.jpg";
-	}
-	}
-    </script>
-  </body>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Toggle Dark/Light Mode</h2>
+<p>Click the button to toggle between dark and light mode for this page.</p>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+  var element = document.body;
+  var isDarkModeEnabled = element.classList.toggle("dark-mode"); // toggle the class and get the current state
+  localStorage.setItem("darkModeEnabled", isDarkModeEnabled); // save the state to local storage
+}
+
+function restoreDarkMode() {
+  var isDarkModeEnabled = localStorage.getItem("darkModeEnabled"); // get the state from local storage
+  if (isDarkModeEnabled === "true") { // check if the state is true
+    document.body.classList.add("dark-mode"); // apply the class to the body
+  }
+}
+
+restoreDarkMode(); // restore the Dark Mode when the page is loaded
+
+</script>
+
+</body>
 </html>
+
