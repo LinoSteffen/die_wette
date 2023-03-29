@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -64,8 +64,6 @@ p {
 }
 
 
-
-
 /* Logo */
 .logo {
     position: absolute;
@@ -74,9 +72,20 @@ p {
     height: 60px;
 }
 
+
+/* Dark/white mode button */
+.wdbutton {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-size: cover;
+    background-position: center;
+    height: 30px;
+}
+
+
 /* Navbar Text und Setting */
 .navbartext {
-    color: white;
     text-align: center;
 }
 
@@ -93,7 +102,6 @@ p {
   }
   
 .navbar a {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -115,7 +123,6 @@ p {
     max-width: 100%;
     height: auto;
 }
-
 
 
 
@@ -160,7 +167,7 @@ p {
 
 .untertitelpresent {
     font-size: 18px;
-    color: #b7b7b7;
+    color: #808080;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -172,11 +179,11 @@ p {
 
 .fa.fa-map-marker {
     padding-right: 5px;
-    color: #b7b7b7;
+    color: #808080;
 }
 
 .fa.fa-map-marker:hover {
-    color: #717171; /* Hier kannst du die Farbe ändern, die beim Hover angezeigt werden soll */
+    color: #424242; 
 }
 
 .button-present {
@@ -188,7 +195,7 @@ p {
 .button {
     display: inline-block;
     padding: 10px;
-    background-color: #717171;
+    background-color: #808080;
     color: #fff;
     text-align: center;
     border-radius: 5px;
@@ -240,17 +247,7 @@ p {
 
 .footertext {
     padding-top: 30px;
-}
-
-.errorfooter {
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    text-align: center;
-    min-height: 80px;
-    bottom: 0;
-    width: 100%;
-    background-color: #4f4f4f;
+    color: white;
 }
 
 
@@ -269,7 +266,7 @@ p {
 .himg {
     max-width: 100%;
     height: auto;
-    width: 350px;
+    height: 350px;
     padding-bottom: 50px;
     padding-left: 5px;
     padding-right: 5px;
@@ -278,7 +275,7 @@ p {
 /* Bild querformat */
 .qimg {
     max-width: 100%;
-    height: 550px;
+    height: 350px;
     width: auto;
     padding-bottom: 50px;
     padding-left: 5px;
@@ -311,7 +308,6 @@ p {
 /* normal text */
 .normaltext {
     font-size: 16px;
-    color: white;
     text-align: center;
     margin-top: 25px;
     margin-bottom: 0px;
@@ -322,7 +318,6 @@ p {
 /* übertitel left */
 .normaltextleft {
     font-size: 16px;
-    color: white;
     text-align: left;
 }
 
@@ -331,14 +326,12 @@ p {
 .utitelleft {
     font-size: 20px;
     font-weight: bold;
-    color: white;
     text-align: left;
 }
 
 
 .titelmitte {
     font-size: 40px;
-    color: white;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -393,12 +386,11 @@ p {
 }
 
 
-
 .premierediv {
     text-align: center;
 }
 .premiereimg {
-    width: 500px;
+    width: 400px;
 }
 @media screen and (max-width: 500px) {
     .premiereimg {
@@ -407,4 +399,7 @@ p {
 }
 
 
-
+.dark-mode {
+    background-color: black;
+    color: white;
+}

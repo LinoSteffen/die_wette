@@ -1,25 +1,52 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Bilder anpassen</title>
-	<style>
-		img {
-			max-width: 100px;
-			height: auto;
-		}
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<img src="bild1.jpg">
-		<img src="bild2.jpg">
-	</div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+	  .dark-mode {
+	background-color: black;
+	color: white;
+	}
+    </style>
+  </head>
+  <body>
+    <h1>GeeksForGeeks</h1>
+  
+    <p>
+      This is a sample GeeksForGeeks Text. 
+      Dark Mode Websites using Html CSS &
+      Javascript
+    </p>
+  
+    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20200122115631/GeeksforGeeks210.png"/>
+  
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+	<img class="wdbutton" src="img/dark-mode.png" onclick="myFunction()">
+	<img id="Logo" src="img/LS grey.png">
+    <script>
+	function myFunction() {
+	var element = document.body;
+	element.classList.toggle("dark-mode");
+	if (element.classList.contains("dark-mode")) {
+	document.getElementById("Logo").src = "img/LS white.png";
+	document.getElementById("switch").src = "img/moon.png";
+	} else {
+	document.getElementById("Logo").src = "img/LS grey.png";
+	document.getElementById("switch").src = "img/sun.jpg";
+	}
+	}
+    </script>
+  </body>
 </html>
