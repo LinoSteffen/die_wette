@@ -55,6 +55,16 @@ p {
     user-select: none; /* Standard */
 }
 
+/* td nicht markieren */
+td {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+}
+
 /* Text der kopiert werden darf */
 .textcopy {
     -webkit-user-select: auto; /* Safari */
@@ -333,11 +343,18 @@ p {
 .titelmitte {
     font-size: 40px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 20px;
     margin-right: 0px; 
 }
 
+.titelmitteklein {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-right: 0px; 
+}
 
 
 .beschreibung {
@@ -394,13 +411,17 @@ p {
 }
 .premiereimg {
     width: 400px;
+    transition: all .3s ease-in-out;
 }
+.premiereimg:hover {
+    transform: scale(1.05);
+}
+
 @media screen and (max-width: 500px) {
     .premiereimg {
         width: 100%;
     }
 }
-
 
 .dark-mode {
     background-color: rgb(20, 20, 20);
@@ -409,4 +430,34 @@ p {
 
 .invertlogo {
     filter: invert(1);
+}
+
+.schauspieler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.schauspielertextleft {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+.schauspielertextright {
+    text-align: left;
+    padding-left: 8px;
+}
+
+.schauspielertextcenter {
+    text-align: center;
+}
+
+.drehorte-img {
+    transition: all .3s ease-in-out;
+}
+
+.drehorte-img:hover {
+    transform: scale(1.13);
 }
