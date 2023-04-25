@@ -272,12 +272,25 @@ td {
     padding-right: 5px;
 }
 
+/* Bild querformat */
+.huni {
+    height: auto;
+    width: 70%;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 @media screen and (max-width: 600px) {
     .qimg {
         width: 100%;
         height: auto;
     }
     .himg {
+        width: 100%;
+        height: auto;
+    }
+    .huni {
         width: 100%;
         height: auto;
     }
