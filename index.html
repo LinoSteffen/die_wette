@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="ss/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="ss/script.js"></script>
+		<script defer src="ss/script.js"></script>
 	</head>
 	<body onload="restoreDarkMode()">
 		<a href="https://linosteffen.ch"><img src="img/LS black.png" id="Logo" class="logo" alt="Logo"></a>
@@ -53,18 +53,16 @@
 			</div>
 		</div>
 
-		
 		<p class="titelmitte">Sponsoren</p>
 			<div class="sponsoren">	
 				<a href="https://www.ref-kirche-burgdorf.ch/home/" target="_blank"><img class="sponsoren-img" src="img/Logo_Ref.Kirche_Burgdorf.png" alt="Logo Ref. Kirche Burgdorf"></a>
 				<a href="https://www.ypsomed.com/de/" target="_blank"><img class="sponsoren-img" src="img/Ypsomed_Logo.png" alt="Logo Ypsomed"></a>
 				<a href="https://www.localnet.ch/" target="_blank"><img class="sponsoren-img" src="img/Localnet_transparent.png" alt="Logo Localnet"></a>
 			</div>
+		<br>
 
-
-		<p class="titelmitte">Premiere</p>
-		<div class="premierediv">
-			<img class="premiereimg" src="img/Die Wette.jpg" onclick="showImage('img/Die Wette.jpg')" alt="Die Wette Filmcover">
+		<div class="titelbilddiv">
+			<img class="titelbildimg" src="img/Die Wette.jpg" onclick="showImage('img/Die Wette.jpg')" alt="Die Wette Filmcover">
 		</div>
 
 
@@ -206,7 +204,7 @@
 			<div class="gallery">	
 				<img class="qimg" src="img/bts/IMG_2985.jpg" onclick="showImage('img/bts/IMG_2985.jpg')" alt="Bahnhof img1">
 				<img class="qimg" src="img/bts/Steinhof.jpg" onclick="showImage('img/bts/Steinhof.jpg')" alt="Bahnhof img2">
-			<img class="qimg" src="img/bts/IMG_2987.jpeg" onclick="showImage('img/bts/IMG_2987.jpeg')" alt="Bahnhof img3">
+				<img class="qimg" src="img/bts/IMG_2987.jpeg" onclick="showImage('img/bts/IMG_2987.jpeg')" alt="Bahnhof img3">
 				<img class="qimg" src="img/bts/IMG_2997.jpeg" onclick="showImage('img/bts/IMG_2997.jpeg')" alt="Zug img1">
 				<img class="qimg" src="img/bts/IMG_2998.jpeg" onclick="showImage('img/bts/IMG_2998.jpeg')" alt="Zug img2">
 				<img class="qimg" src="img/bts/IMG_3260.jpeg" onclick="showImage('img/bts/IMG_3260.jpeg')" alt="Schule img1">
@@ -232,6 +230,20 @@
 			<div class="gallery">	
 				<img class="huni" src="img/Full Timeline.png" alt="Full Timeline">
 			</div>
+
+		<p class="titelmitteoma">Premiere</p>
+		<p class="titelmittedate">30.04.2023</p>
+			<div class="gallery">
+				<img class="qimg" src="img/premiere/IMG_6191.jpg" onclick="showImage('img/premiere/IMG_6191.jpg')" alt="premiere img3">
+				<img class="qimg" src="img/premiere/Vorstellung.jpg" onclick="showImage('img/premiere/Vorstellung.jpg')" alt="premiere img2">
+				<img class="qimg" src="img/premiere/IMG_6206.jpg" onclick="showImage('img/premiere/IMG_6206.jpg')" alt="premiere img1">
+			</div>
+
+		<p class="titelmitte">Film</p>
+		<div class="filmdiv">
+			<span id="comingSoonDiv"></span>
+			<span id="cursorDiv">&#95;</span>	
+		</div>
 
 	</body>
 	<footer class="footer">

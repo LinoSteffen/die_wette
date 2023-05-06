@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -351,6 +353,23 @@ td {
     margin-right: 0px; 
 }
 
+.titelmitteoma {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    margin-right: 0px; 
+}
+
+.titelmittedate {
+    color: #b7b7b7;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px; 
+}
+
 .titelmitteklein {
     font-size: 30px;
     text-align: center;
@@ -414,21 +433,44 @@ td {
 }
 
 
-.premierediv {
+.filmdiv {
+    margin-top: 100px;
+    height: 250px;
     text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+
 }
-.premiereimg {
+
+.filmdiv > #comingSoonDiv {
+
+}
+
+.filmdiv > #cursorDiv {
+    color: #b7b7b7;
+}
+
+.titelbilddiv {
+    text-align: center;
+    padding-top: 20px;
+}
+.titelbildimg {
     width: 400px;
     transition: all .3s ease-in-out;
 }
-.premiereimg:hover {
+.titelbildimg:hover {
     transform: scale(1.05);
 }
 
 @media screen and (max-width: 500px) {
-    .premiereimg {
+    .titelbildimg {
         width: 100%;
     }
+}
+
+.premierediv {
+    text-align: center;
 }
 
 .dark-mode {
