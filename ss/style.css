@@ -351,6 +351,22 @@ td {
     margin-right: 0px; 
 }
 
+.titelmitteoma {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    margin-right: 0px; 
+}
+
+.titelmittedate {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px; 
+}
+
 .titelmitteklein {
     font-size: 30px;
     text-align: center;
@@ -414,21 +430,26 @@ td {
 }
 
 
-.premierediv {
+.titelbilddiv {
     text-align: center;
+    padding-top: 20px;
 }
-.premiereimg {
+.titelbildimg {
     width: 400px;
     transition: all .3s ease-in-out;
 }
-.premiereimg:hover {
+.titelbildimg:hover {
     transform: scale(1.05);
 }
 
 @media screen and (max-width: 500px) {
-    .premiereimg {
+    .titelbildimg {
         width: 100%;
     }
+}
+
+.premierediv {
+    text-align: center;
 }
 
 .dark-mode {
@@ -468,4 +489,9 @@ td {
 
 .drehorte-img:hover {
     transform: scale(1.13);
+}
+
+.test {
+    height: 250px;
+    background-color: wheat;
 }

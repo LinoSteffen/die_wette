@@ -9,25 +9,6 @@ function showImage(imageSrc) {
     lightbox.style.display = 'none';
 }
 
-
-/*
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-  document.getElementById("Logo").classList.toggle("invertlogo")
-	if (element.classList.contains("dark-mode")) {
-    document.getElementById("switch").src = "img/moon.png";
-    } else {
-    document.getElementById("switch").src = "img/sun.png";
-    }
-}
-
-localStorage.setItem('ichbineinhuan', 'ja');
-const value = localStorage.getIttem("ichbineinhuan");
-localStorage.removeItem("Ichbineinhuan");
-*/
-
-
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
