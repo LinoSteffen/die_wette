@@ -33,3 +33,45 @@ function restoreDarkMode() {
 }
 
 restoreDarkMode(); // rufe die Funktion beim Laden der Seite auf, um den Dark Mode zu überprüfen
+
+
+// Comming Soon text
+const comingSoonDiv = document.getElementById('comingSoonDiv');
+const text = 'Coming Soon';
+let index = 0;
+const delay = 300
+
+function displayText() {
+  if (index < text.length) {
+    comingSoonDiv.innerHTML += text[index];
+    index++;
+    setTimeout(displayText, delay);
+  } else {
+    setTimeout(removeText, delay);
+  }
+}
+
+function removeText() {
+  if (index > 0) {
+    index--;
+    comingSoonDiv.innerHTML = text.slice(0, index);
+    setTimeout(removeText, delay);
+  } else {
+    setTimeout(displayText, delay);
+  }
+}
+
+displayText();
+
+const cursorDiv = document.getElementById('cursorDiv');
+const delayCurser = 500
+
+function displayCursor() {
+  cursorDiv.setAttribute("style" , "opacity: 1;")
+  setTimeout(() => {
+    cursorDiv.setAttribute("style" , "opacity: 0;")
+    setTimeout(displayCursor, delayCurser) 
+  }, delayCurser)
+}
+
+displayCursor();

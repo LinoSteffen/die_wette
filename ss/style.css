@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -360,6 +362,7 @@ td {
 }
 
 .titelmittedate {
+    color: #b7b7b7;
     font-size: 20px;
     text-align: center;
     margin-top: 0px;
@@ -430,6 +433,24 @@ td {
 }
 
 
+.filmdiv {
+    margin-top: 100px;
+    height: 250px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+
+}
+
+.filmdiv > #comingSoonDiv {
+
+}
+
+.filmdiv > #cursorDiv {
+    color: #b7b7b7;
+}
+
 .titelbilddiv {
     text-align: center;
     padding-top: 20px;
@@ -489,9 +510,4 @@ td {
 
 .drehorte-img:hover {
     transform: scale(1.13);
-}
-
-.test {
-    height: 250px;
-    background-color: wheat;
 }
