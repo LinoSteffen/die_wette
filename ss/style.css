@@ -433,15 +433,7 @@ td {
 }
 
 
-.filmdiv {
-    margin-top: 100px;
-    height: 250px;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    font-size: 60px;
 
-}
 
 .filmdiv > #comingSoonDiv {
 
@@ -510,4 +502,18 @@ td {
 
 .drehorte-img:hover {
     transform: scale(1.13);
+}
+
+.ytlogodiv {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+
+.ytlogoimg {
+    width: 70px;
+    transition: all .3s ease-in-out;
+}
+.ytlogoimg:hover {
+    transform: scale(1.15);
 }
